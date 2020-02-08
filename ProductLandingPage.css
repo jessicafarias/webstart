@@ -1,9 +1,3 @@
-/*div[class^="t"] //Selecciona todos los div si el nombre de la clase empieza con div*/
-/*div[class$="test"] //Selecciona tods los div si el nombre de la clase tiene test por algun lado*/
-/*[class*="test"] Selecciona toodos los elmentos ea div o no que tienen la clase test por algun lado    */
-/*div + p Selecciona todos los p que están inmediatamente después de un div (NO DENTRO DE DIV)*/
-/*p ~ ul Selecciona todos los ul que van inmediatamente después de p*/
-
 html,body {
     height:100%;
     font-family: 'Lato', sans-serif;
