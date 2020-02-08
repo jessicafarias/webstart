@@ -1,0 +1,154 @@
+/*div[class^="t"] //Selecciona todos los div si el nombre de la clase empieza con div*/
+/*div[class$="test"] //Selecciona tods los div si el nombre de la clase tiene test por algun lado*/
+/*[class*="test"] Selecciona toodos los elmentos ea div o no que tienen la clase test por algun lado    */
+/*div + p Selecciona todos los p que están inmediatamente después de un div (NO DENTRO DE DIV)*/
+/*p ~ ul Selecciona todos los ul que van inmediatamente después de p*/
+
+html,body {
+    height:100%;
+    font-family: 'Lato', sans-serif;
+    top: 0em;
+    margin-top: 0;
+}
+
+#prices{
+    font-size: 30px;
+}
+
+button{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    background-color: #F1C40F;
+    border: #F1C40F;
+}
+
+header {
+    /*display:block;*/
+    /*NAV-BAR ADD*/
+    position: sticky;/*Fijo, no se mueve a donde está, stinki es cuando se queda arriba si bajas el scrooll*/ 
+    top: 0; /*Quita el top*/
+    width: 100%;/*Ocupa toda la pantalla de awech*/
+    min-height: 85px; /*Como se acomodan las letras y ocupa menos espacio, esto ahce que 
+    sin problema en lo mínimo sea 75 px osea queda más gorda la pestaña*/
+    /*pdding del header dice si es más grande que lo demás si quieres ocupar toda la pantalla omitelo*/
+    display: flex;/*Dice que es flexbox*/
+    justify-content: space-around;/*espaciado y margen también*/
+    align-items: center; /*Centra los items en el contenido tanto espacio vertical y horizontal*/
+    background-color: #f1c40f;
+    
+}
+
+.logo {
+    width: 60vw;/*Hace que el ancho del logotipo sea siempre 60vw del ancho */
+}
+
+@media (max-width: 650px) {
+    .logo {
+      margin-top: 15px;/*Cuando se vuelve más pequeño y se pone en verticual le da un margen en top*/
+      width: 100%;/*Cuando se vuelve más pequeño y se pone en verticual le da un margen en top*/
+      /*position relTIVe orq*/
+    }
+  }
+
+  .logo > img { /*Selector de hijo directo de logo*/
+    max-width: 300px; /*Tamaño máximo del logo*/
+    display: flex; /*Siempre a la derecha*/
+    margin-left: 20px; /*Minimo el cambio es para desplazar a la izquiera*/
+  }
+section {
+    width: 100%;
+    background: #b33535;
+    float: left; /*Position left*/
+    /*overflow: auto; /* Scroll si lo necesita*/ 
+    padding-bottom: 60px;
+    padding-top:30px;
+}
+footer {
+    height: 80px; 
+    padding:10px 0px;
+    background: goldenrod;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+/**/
+
+#img_fuego{
+    max-width: 50px;
+    min-width: 40px;
+    float: left;
+}
+#Features{
+    width: 100%;
+    font-size: 30px;
+    align-items: center;
+    display:flex;   
+    flex-direction: column;
+    justify-content: center;
+}
+
+#HowItWorks{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+p ~ p {
+    font-size: 20px;
+}
+
+#Pricing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+article{
+    background-color: lightgreen;
+    min-width: 250px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 350px;
+    margin: 20px 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: goldenrod;
+}
+
+
+
+/*PARA NAV-BAR*/
+ul{
+    width: 35vw;/*35 del ancho*/
+    display: flex;/* coloca a la lista flex para que esten en horizontal*/
+    flex-direction: row;/* coloca a la lista flex para que esten en horizontal*/
+    justify-content: space-around;/*Space around es del contenedor deja espaciados parejos con margen*/
+}
+li {
+    list-style: none; /*Quita las bolitas de los elementos de la lista*/
+  }
+
+a {
+    color: #000; /*Quita el color bien rancio azul de html colorea a negro y tulacaboyo*/
+    text-decoration: none; /*Quita el subrayado de los links*/
+  }
+
+#price_head{
+    background-color: darkmagenta;
+    height: 20%;
+    text-align: center;
+}
+
+#price_body{
+    background-color: #b33535;
+    height: 79%;
+    padding: 5px;
+    margin-top: 0px;
+    text-align: center;
+}
