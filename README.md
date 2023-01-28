@@ -8,3 +8,13 @@ Proporcione una breve descripción que explique el qué, el por qué y el cómo 
 - ¿Por qué desarrolló este proyecto? (Nota: La respuesta no es “Porque fue una asignación de tarea”.)
 - ¿Qué problema resuelve?
 - ¿Qué aprendió?
+
+## Índice (opcional)
+
+Si su README es extenso, agregue un índice para facilitar que los usuarios encuentren lo que necesitan.
+
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Créditos](#créditos)
+- [Licencia](#licencia)
+
